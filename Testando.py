@@ -53,10 +53,6 @@ def encontraFuncao(pontos):
     plt.plot(x, m * x + c)
     return m, c
 
-
-def findIntersection(fun1,fun2,x0):
-    return fsolve(lambda x : fun1(x) - fun2(x),x0)
-
 #plotagem da função relacionada ao angulo de deadrise
 deadrise = int(input("Insira o angulo de Deadrise: "))
 x = np.arange(-10.,100.,1.)
@@ -76,8 +72,8 @@ pontoCostadoX = deslocamento(largura, altura, np.tan(costado))
 m, c = encontraFuncao([(pontoCostadoX,0),(largura,altura)])
 
 #marcação do ponto chine (interceção da funcão de deadrise e costado)
-y = d * x
-g = m * x + c
+# y = d * x
+# g = m * x + c
 
 # idx = np.argwhere(np.diff(np.sign((d * x)-(m * x + c))) != 0).reshape(-1) + 0
 # plt.plot(x[idx], (d * x)[idx], 'ro')
