@@ -13,7 +13,7 @@ for i in range(2):
   X, Y = np.meshgrid(x, y)
   zs = np.array([fun(funcoesCasco[i],funcoesCasco[i+1],x,y) for x,y in zip(np.ravel(X), np.ravel(Y))])
   Z = zs.reshape(X.shape)
-  ax.scatter(X, Y, Z)
+  ax.plot_surface(X, Y, Z)
 
 # ax.scatter(X, Y, Z2)
 ax.set_xlabel('Eixo X')

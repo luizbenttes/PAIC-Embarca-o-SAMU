@@ -95,7 +95,6 @@ def criarHull(pontos,altura,largura):
     plt.show()
 
 
-
 #plotagem da função relacionada ao angulo de deadrise
 deadrise = int(input("Insira o angulo de Deadrise: "))
 x = np.arange(-10.,100.,1.)
@@ -117,7 +116,7 @@ m, c = encontraFuncao([(pontoCostadoX,0),(largura,altura)])
 #encontro do ponto chine (interceção da funcão de deadrise e costado)
 u, v = intercessao(d, m, c)
 pontos = np.array([[0, altura],[0,0], [largura, altura], [u, v]])
-
+print(pontos)
 #marcação dos pontos que representam as "quinas" da embarcação
 criarHull(pontos,altura,largura)
 
