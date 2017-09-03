@@ -111,9 +111,6 @@ def plot3D(deadrise,costado,altura,largura):
             ax.plot(pts[s, 0], pts[s, 1],i+2, "r-")
 
     plt.axis([-altura*2, altura * 2, -largura*2, largura * 2], 'b')
-    plt.Figure()
-    thismanager = get_current_fig_manager()
-    thismanager.window.wm_iconbitmap("boat.ico")
     plt.show()
 
 def coordenadadasQuinas(altura,largura, u, v):

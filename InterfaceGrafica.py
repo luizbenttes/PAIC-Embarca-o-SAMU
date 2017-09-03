@@ -104,7 +104,7 @@ class Application(tk.Frame):
 root = tk.Tk()
 app = Application(master=root)
 app.master.title("Plotagem da Embarcação")
-root.iconbitmap(r'C:\Users\luizb\Google Drive\PAIC\2017-2018\Código Teste\PAIC-Embarcacao-SAMU\boat.ico')
+root.iconbitmap(r'boat.ico')
 app.master.minsize(400,400)
 app.master.maxsize(400,400)
 app.mainloop()
