@@ -38,12 +38,9 @@ def AngToRad(ang):
 
 def funcaoPontoAngulo(ponto,a):
     b = ponto[1] - (ponto[0]*a)
-    x = np.arange(-30., 100., 1.)
     print("y = ",a,"x +",b)
     return b
-    # plt.plot(x, a * x + b)
-    # plt.axis([-10, 10, -10, 10], 'g')
-    # plt.show()
+
 
 # xBase = int(input("Insira o tamanho da base: "))
 # xBaseChine = int(input("Insira o tamanho da base Chine: "))
@@ -52,35 +49,47 @@ def funcaoPontoAngulo(ponto,a):
 # comprimento = int(input("Insira Comprimento embarcaçao: "))
 # alfaBow = int(input("Insira angulo de Alfa Bow: "))
 
-xBase = 10
-xBaseChine = 5
+xBase = 20
+xBaseChine = 10
 dT= 3
 dBow = 12
 comprimento = 30
-alfaBow = 30
+alfaBow = 60
+
 
 alfaChine = int(input("Insira angulo de Alfa Chine: "))
 x = np.arange(-10., 100., 1.)
 aChine = math.tan(AngToRad(alfaChine))
 
-plt.plot([0,xBase],[0,0],'r')
-pontoBase = [xBase,0]
-aBase = math.tan(AngToRad(alfaBow))
-bBase = funcaoPontoAngulo(pontoBase,aBase)
-plt.plot(x, aBase * x + bBase, 'r')
-plt.plot([0,xBaseChine],[dT,dT],'b')
-
+#linha que representa a linha do DECK
 plt.plot([0,comprimento],[dBow,dBow],'g')
-plt.legend(['xBase','xBaseChine','LinhaDeck'], loc='upper left')
-# m,c = encontraFuncao([(xBase,0),(comprimento,dBow)])
+plt.plot([0,0],[0,dBow],'g')
+#linhas que repesentam a base
+
+
+pontoComprimento = [comprimento,dBow]
+aBase = math.tan(AngToRad(alfaBow))
+bBase = funcaoPontoAngulo(pontoComprimento,aBase)
+#plt.plot(x, aBase * x + bBase, 'r')
+raiz = -bBase/aBase
+plt.plot([0,raiz],[0,0],'r')
+plt.plot([raiz,comprimento],[0,dBow],'r')
+#linhas que repesentam a base CHINE
+plt.plot([0,xBaseChine],[dT,dT],'b')
 #
-# plt.plot(x, m * x + c)
-
-
 pontoChine = [xBaseChine,dT]
 bChine = funcaoPontoAngulo(pontoChine,aChine)
-plt.plot(x, aChine * x + bChine,'b')
+#plt.plot(x, aChine * x + bChine,'b')
+
+
+
+
+# #intercessao linha base e linha base chine
+x,y = intercessao(aBase, bBase, aChine, bChine)
+#plt.plot([x,comprimento],[y,dBow],'p')
+plt.plot([xBaseChine,x],[dT,y], 'b')
+
 plt.grid(True)
-plt.axis([-1, 30, -1, 30], 'b')
+plt.axis([-20, comprimento+2, -1, dBow+2], 'b')
 plt.show()
 
