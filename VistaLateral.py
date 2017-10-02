@@ -30,6 +30,7 @@ def encontraFuncao(pontos):
     A = vstack([x_coords, ones(len(x_coords))]).T
     m, c = lstsq(A, y_coords)[0]
     x = np.arange(-10., 100., 1.)
+    #print("y = ", m, "x +", c)
     #plt.plot(x, m * x + c)
     return m, c
 
@@ -41,6 +42,14 @@ def funcaoPontoAngulo(ponto,a):
     print("y = ",a,"x +",b)
     return b
 
+def encontraY(pontos,x):
+    if (x > 0) and (x <=pontos[2]):
+        (m,c) = pontos[0]
+    else:
+        (m, c) = pontos[1]
+    #print(m, c)
+    #print(m*x + c)
+    return x, m*x + c
 
 # xBase = int(input("Insira o tamanho da base: "))
 # xBaseChine = int(input("Insira o tamanho da base Chine: "))
@@ -54,8 +63,7 @@ xBaseChine = 10
 dT= 3
 dBow = 12
 comprimento = 30
-alfaBow = 60
-
+alfaBow = 45
 
 alfaChine = int(input("Insira angulo de Alfa Chine: "))
 x = np.arange(-10., 100., 1.)
@@ -76,7 +84,12 @@ plt.plot([0,raiz],[0,0],'r')
 plt.plot([raiz,comprimento],[0,dBow],'r')
 #linhas que repesentam a base CHINE
 plt.plot([0,xBaseChine],[dT,dT],'b')
+
+pontosFuncao = [(0,dT),(xBaseChine,dT)]
+m,c = encontraFuncao(pontosFuncao)
 #
+linhaChine = []
+linhaChine.append((m,c))
 pontoChine = [xBaseChine,dT]
 bChine = funcaoPontoAngulo(pontoChine,aChine)
 #plt.plot(x, aChine * x + bChine,'b')
@@ -86,10 +99,18 @@ bChine = funcaoPontoAngulo(pontoChine,aChine)
 
 # #intercessao linha base e linha base chine
 x,y = intercessao(aBase, bBase, aChine, bChine)
-#plt.plot([x,comprimento],[y,dBow],'p')
 plt.plot([xBaseChine,x],[dT,y], 'b')
 
-plt.grid(True)
-plt.axis([-20, comprimento+2, -1, dBow+2], 'b')
-plt.show()
 
+pontosFuncao = [(xBaseChine,dT),(x,y)]
+m,c = encontraFuncao(pontosFuncao)
+linhaChine.append((m,c))
+linhaChine.append(dT)
+print(linhaChine)
+
+teste = 6
+x,y = encontraY(linhaChine,teste)
+
+plt.grid(False)
+plt.axis([-1, comprimento+2, -dBow*3.5, dBow*3.5], 'b')
+plt.show()

@@ -1,6 +1,6 @@
 
 """
-Criado em (date)
+Criado em
 
 @author: Luiz Bentes
 """
@@ -17,5 +17,8 @@ xLin = int(input("Valor de xLin: "))
 #precisa-se fazer as retas em paralelo e em duplas
 plt.plot([-Bxt,-Bxt],[0, xLin],'g')
 plt.plot([Bxt,Bxt],[0, xLin],'g')
+
+plt.plot()
+
 plt.grid(True)
 plt.show()
