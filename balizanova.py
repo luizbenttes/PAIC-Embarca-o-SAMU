@@ -117,7 +117,7 @@ def funcaoPontoAngulo(ponto,a):
     return b
 
 def encontraY(pontos,x):
-    if (x > 0) and (x <=pontos[2]):
+    if (x >= 0) and (x <=pontos[2]):
         (m,c) = pontos[0]
     else:
         (m, c) = pontos[1]
@@ -129,21 +129,12 @@ def linhaDeChine(dBow,comprimento,aChine,xBaseChine,dT):
     xBase = 20
     alfaBow = 45
 
-    # linha que representa a linha do DECK
-    # plt.plot([0, comprimento], [dBow, dBow], 'g')
-    # plt.plot([0, 0], [0, dBow], 'g')
-    # linhas que repesentam a base
-
 
     pontoComprimento = [comprimento, dBow]
     aBase = math.tan(AngToRad(alfaBow))
     bBase = funcaoPontoAngulo(pontoComprimento, aBase)
-    # plt.plot(x, aBase * x + bBase, 'r')
     raiz = -bBase / aBase
-    # plt.plot([0, raiz], [0, 0], 'r')
-    # plt.plot([raiz, comprimento], [0, dBow], 'r')
-    # linhas que repesentam a base CHINE
-    # plt.plot([0, xBaseChine], [dT, dT], 'b')
+
 
     pontosFuncao = [(0, dT), (xBaseChine, dT)]
     m, c = encontraFuncao(pontosFuncao)
@@ -165,7 +156,7 @@ def linhaDeChine(dBow,comprimento,aChine,xBaseChine,dT):
     print(linhaChine)
 
     teste = 0
-    x, y = encontraY(linhaChine, teste)
+    x, y = encontraY(linhaChine,teste)
     return x, y
     # plt.grid(False)
     # plt.axis([-1, comprimento + 2, -dBow * 3.5, dBow * 3.5], 'b')
@@ -190,12 +181,13 @@ def principal(deadrise,costado,altura,largura):
     #marcação dos pontos que representam as "quinas" da embarcação
     #pontos = coordenadadasQuinas(altura, largura, u, v)
 
-    xBaseChine = 10
-    dT = 3
-    alfaChine = 20
-    aChine = math.tan(AngToRad(alfaChine))
-    comprimento = 40
-    pontoChineX,pontoChineY = linhaDeChine(altura, comprimento, aChine, xBaseChine, dT)
+    # xBaseChine = 10
+    # dT = 3
+    # alfaChine = 20
+    # aChine = math.tan(AngToRad(alfaChine))
+    # comprimento = 40
+    # pontoChineX,pontoChineY = linhaDeChine(altura, comprimento, aChine, xBaseChine, dT)
+
     pontos = coordenadadasQuinas(altura, largura, u, v, pontoChineX, pontoChineY)
 
     return pontos,altura,largura

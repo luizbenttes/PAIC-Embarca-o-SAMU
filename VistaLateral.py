@@ -3,7 +3,7 @@ from numpy import ones, vstack
 from numpy.linalg import lstsq
 import numpy as np
 import math
-
+import VistaSuperior
 '''
 # Nome da funcão: intercessão
 # a1: coeficiente de X [equacao 1]
@@ -88,8 +88,6 @@ plt.plot([0,xBaseChine],[dT,dT],'b')
 pontosFuncao = [(0,dT),(xBaseChine,dT)]
 m,c = encontraFuncao(pontosFuncao)
 #
-linhaChine = []
-linhaChine.append((m,c))
 pontoChine = [xBaseChine,dT]
 bChine = funcaoPontoAngulo(pontoChine,aChine)
 #plt.plot(x, aChine * x + bChine,'b')
@@ -100,17 +98,10 @@ bChine = funcaoPontoAngulo(pontoChine,aChine)
 # #intercessao linha base e linha base chine
 x,y = intercessao(aBase, bBase, aChine, bChine)
 plt.plot([xBaseChine,x],[dT,y], 'b')
-
-
 pontosFuncao = [(xBaseChine,dT),(x,y)]
-m,c = encontraFuncao(pontosFuncao)
-linhaChine.append((m,c))
-linhaChine.append(dT)
-print(linhaChine)
 
-teste = 6
-x,y = encontraY(linhaChine,teste)
 
 plt.grid(False)
 plt.axis([-1, comprimento+2, -dBow*3.5, dBow*3.5], 'b')
 plt.show()
+#VistaSuperior.VistaSuperior(x)
