@@ -66,6 +66,7 @@ def Bj(i,j,derivate,u):
 						3*u*(np.power((1-u),2)),
 						3*(np.power(u,2)),
 						3*(np.power(u,2))]
+			print("entrou")
 			return normal3[j]
 		elif i == 2:
 			normal2 = [np.power((1-u),2),
@@ -84,12 +85,8 @@ def dist(a,b):
 	output: the distance in straight line of these points.
 	post-condition: no modifications
 	'''
-	print(a)
-	print(b)
-
 	result = (np.sqrt(np.power((a[0]-b[0]),2)+np.power((a[1]-b[1]),2)))
 	#+np.power((a[2]-b[2]),2)
-	print(result)
 	return result
 
 def uStar(K0,K1,K2,k):
@@ -99,7 +96,7 @@ def uStar(K0,K1,K2,k):
 
 def MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1):
 	derivate = False
-	a_12 = -(np.tan(alphak))
+	a_12 = -(np.tan(np.deg2rad(alphak)))
 	u = uStar(K0,K1,K2,k)
 	a_20 = Bj(3,1,derivate,u)
 	a_22 = Bj(3,2,derivate,u)
@@ -111,7 +108,7 @@ def MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1):
 		[a_20,0,a_22,0],
 		[0,a_31,0,a_33]]
 
-	b_1 = Hs - (np.tan(alphak)*Ls)
+	b_1 = Hs - (np.tan(np.deg2rad(alphak))*Ls)
 	b_2 = Lc - (Bj(3,0,derivate,u)*L0) - (Bj(3,3,derivate,u)*Ls)
 	b_3 = Hc - (Bj(3,3,derivate,u)*Hs)
 
@@ -129,29 +126,16 @@ def MatrixConstructor():
 
 	K0 = [L0,0]
 	K1 = [Lc,Hc]
-	K2 = [Ls,Hs]
+	K2 = [124.0,16.3]
 
-
-	A,B = MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1)
-	return A, B, K0, K2
+	return MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1)
 
 
 if __name__ == "__main__":
-	A, b, K0, K2 = MatrixConstructor()
+	A, b = MatrixConstructor()
 	A = np.array(A)
 	b =  np.array(b)
 	print (GEPP(np.copy(A), np.copy(b), doPricing = True))
-	R = GEPP(A,b)
-
-	pontosLinhaCentral = []
-	pontosLinhaCentral.append(K0)
-	pontosLinhaCentral.append([R[0],R[1]])
-	pontosLinhaCentral.append([R[2],R[3]])
-	pontosLinhaCentral.append(K2)
-
-
-	print(pontosLinhaCentral)
-
-
+	print (GEPP(A,b)) 
 	
 
