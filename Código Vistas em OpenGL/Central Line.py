@@ -49,10 +49,10 @@ def Bj(i,j,derivate,u):
 	
 	if derivate:
 		if i == 3:
-			derivate3 = [-3*((1-u)**2),
-						3*((1-u)**2)-6*u*(1-u),
-						(6*u*(1-u))-3*u**2,
-						3*(u**2)]
+			derivate3 = [-3*(np.power((1-u),2)),
+						3*(np.power((1-u),2))-6*u*(1-u),
+						(6*u*(1-u))-3*np.power(u,2),
+						3*(np.power(u,2))]
 			return derivate3[j]
 		elif i == 2:
 			derivate2 = [-2*(1-u),
@@ -64,8 +64,8 @@ def Bj(i,j,derivate,u):
 		if i == 3:
 			normal3 = [np.power((1-u),3),
 						3*u*(np.power((1-u),2)),
-						3*(np.power(u,2)),
-						3*(np.power(u,2))]
+						3*(np.power(u,2))*(1-u),
+						(np.power(u,3))]
 			return normal3[j]
 		elif i == 2:
 			normal2 = [np.power((1-u),2),
@@ -84,16 +84,17 @@ def dist(a,b):
 	output: the distance in straight line of these points.
 	post-condition: no modifications
 	'''
-	print(a)
-	print(b)
 
 	result = (np.sqrt(np.power((a[0]-b[0]),2)+np.power((a[1]-b[1]),2)))
 	#+np.power((a[2]-b[2]),2)
-	print(result)
+	#print(result)
 	return result
 
 def uStar(K0,K1,K2,k):
-	u = np.power(dist(K0,K1),k)/(np.power(dist(K0,K1),k) + np.power(dist(K1,K2),k))
+	a = dist(K0,K1)
+	b = dist(K1,K2)
+
+	u = a/(a + b)
 	return u 
 
 
@@ -110,22 +111,23 @@ def MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1):
 		[0,0,a_12,1],
 		[a_20,0,a_22,0],
 		[0,a_31,0,a_33]]
+	print("A: ",A)
 
 	b_1 = Hs - (np.tan(alphak)*Ls)
 	b_2 = Lc - (Bj(3,0,derivate,u)*L0) - (Bj(3,3,derivate,u)*Ls)
 	b_3 = Hc - (Bj(3,3,derivate,u)*Hs)
 
 	B = [0,b_1,b_2,b_3]
-
+	print("B: ",B)
 	return A,B
 
 def MatrixConstructor():
 	Ls = 124.0
-	L0 = 66.5
+	L0 = 60
 	Lc = 114.4
 	Hs = 16.3
 	Hc = 11.2
-	alphak = 29
+	alphak = np.deg2rad(29)
 
 	K0 = [L0,0]
 	K1 = [Lc,Hc]
@@ -140,7 +142,7 @@ if __name__ == "__main__":
 	A, b, K0, K2 = MatrixConstructor()
 	A = np.array(A)
 	b =  np.array(b)
-	print (GEPP(np.copy(A), np.copy(b), doPricing = True))
+	print ("Resposta: ",GEPP(np.copy(A), np.copy(b), doPricing = True),"\n")
 	R = GEPP(A,b)
 
 	pontosLinhaCentral = []
@@ -150,7 +152,7 @@ if __name__ == "__main__":
 	pontosLinhaCentral.append(K2)
 
 
-	print(pontosLinhaCentral)
+	print("Linha Central: ",pontosLinhaCentral)
 
 
 	
