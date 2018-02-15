@@ -122,6 +122,9 @@ def MatrixConstructor():
 	Lc = 114.4
 	Hs = 16.3
 	Hc = 11.2
+	hs = 12.8
+	alpha_S = 1
+	beta_S = 2
 	alphak = 29
 
 	K0 = [L0,0]
@@ -129,6 +132,7 @@ def MatrixConstructor():
 	K2 = [124.0,16.3]
 
 	return MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1)
+
 
 
 if __name__ == "__main__":
