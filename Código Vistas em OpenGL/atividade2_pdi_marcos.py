@@ -6,7 +6,7 @@ import sys
 TOTAL = 4 #número de pontos
 prec = 8000 #total de pontos intermediários
 LARGURA = 600
-ALTURA = 500
+ALTURA = 400
 
 tam = 100
 quant = 3 #quantidade de curvas a serem mostradas''
@@ -15,7 +15,8 @@ pontos = [[[66.5, 0.0, 0.0], [91.701537401368, 0.0, 0.0], [105.71495612196605, 6
 			[[0, 12.8, 0.0], [76.468254918831391, 15.470330303456716, 0.0], [124.0, 16.3, 0.0]],
 			[[0, 3.3,0.0], [47.897336317074284, 3.2999999999999998,0.0], [66.275645365241274, 4.4365630301171066,0.0], [114.4, 11.2,0.0]]]
 
-#pontos = [[[60, 0, 0.0], [90.910090187808592, 0.0, 0.0], [103.34243104459955, 4.8493225470118118, 0.0], [124.0, 16.3, 0.0]]]
+# pontos = [[[0, 11.1, 0.0], [19.707890300631821, 10.842545907638371, 0.0], [106.19223310320206, 21.9907607050948, 0.0], [124.0, 0, 0.0]],
+# 			[[0, -11.1, 0.0], [19.707890300631821, -10.842545907638371, 0.0], [106.19223310320206, -21.9907607050948, 0.0], [124.0, 0, 0.0]]]
 
 def frange(start, stop, step):
 	i = start
@@ -35,16 +36,18 @@ def Init():
 		glEnable(GL_MAP1_VERTEX_3)
 
 		glColor3f(1.5,1.0,0.3)
-		thickness=1.8
+		thickness=0.1
 		glLineWidth(thickness)
 		glBegin(GL_LINE_STRIP)
 		for j in frange(0.0,1.0,delta):
 			glEvalCoord1f(round(j,2))
 		glEnd()
 
+		glRasterPos2f(125, 0)
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, 33)
 		glBegin(GL_LINES)
 		glVertex2f(0,0)   
-		glVertex2f(66.5, 0)
+		glVertex2f(124.0, 0)
 		glEnd()
 
 
@@ -61,12 +64,16 @@ def Init():
 			glVertex3fv(pontos[i][j])
 		glEnd();
 
-		glColor3f(0.0,1.0,1.0)
-		glPointSize(5)
+		# glColor3f(0.0,1.0,1.0)
+		# glPointSize(5)
 
-		glBegin(GL_POINTS)
-		glVertex3fv([114.4,11.2,0.0])
-		glEnd()
+
+
+		# glBegin(GL_POINTS)
+		# glVertex3fv([114.4,11.2,0.0])
+		# glEnd()
+		#glEnable(GL_DEPTH_TEST)
+
 	
 	glutSwapBuffers()
 	glFlush()
@@ -114,13 +121,13 @@ def reshape(w, h):
 	# glMatrixMode(GL_MODELVIEW)
 	# glLoadIdentity()
 	glMatrixMode (GL_PROJECTION)
-	gluOrtho2D (-20.0, 130, -20.0, 60.0) 
+	gluOrtho2D (-5.5, 130, -60.0, 60.0) 
 
 
 glutInit(sys.argv)
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
 glutInitWindowSize(LARGURA, ALTURA)
-glutInitWindowPosition(350,50)
+glutInitWindowPosition(250,70)
 glutCreateWindow(b'Curvas de Bezier')
 
 glutDisplayFunc(Init)
