@@ -3,8 +3,8 @@ from OpenGL.GLU import *
 from OpenGL.GLUT import *
 import sys
 
-TOTAL = 4 #número de pontos
-prec = 8000 #total de pontos intermediários
+TOTAL = 4 #numero de pontos
+prec = 80#total de pontos intermediarios
 LARGURA = 600
 ALTURA = 400
 
