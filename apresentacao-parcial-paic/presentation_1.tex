@@ -57,7 +57,8 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \frametitle{Introdução}
 \begin{itemize}
 	\item Para prestar socorro à população em atendimentos de urgência e emergência em saúde, as regiões sem acesso terrestre contam com o serviço de SAMU Fluvial.
-	\item Atendimento similiar às ambulâncias terrestes.
+	\item Atendimento similiar às ambulâncias terrestres.
+	\item Projetos Marítimos x Projetos Fluviais
 \end{itemize}
 
 \begin{figure}[h]
@@ -83,37 +84,11 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \begin{frame}
 \frametitle{Justificativa}
 \begin{itemize}
-\item Fábrica do Polo Industrial de Manaus
-\item Produção de \textbf{70 modelos} de placas diferentes.
-\item Máquina NXT 
+
 \end{itemize}
 
-
-\begin{figure}[h]
-\centering
-\subfloat[Máquina NXT similar à utilizada na empresa]{
-\includegraphics[scale=0.7]{Imagem1}
-\label{fig:nxt}
-}
-\quad 
-\subfloat[Carretéis de Componentes]{
-\includegraphics[scale=0.725]{Imagem2}
-\label{fig:carreteis}
-}
-\caption{Máquina NXT e carretéis de componentes}
-\end{figure}
-
 \end{frame}
 
-%------------------------------------------------
-\begin{frame}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.7]{Imagem3}
-\caption{Cenário hipotético de escolha de \textit{setup}}
-\label{fig:funcionamentoNxt}
-\end{figure}
-\end{frame}
 %------------------------------------------------
 \section{Objetivos}
 %------------------------------------------------
@@ -129,15 +104,15 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \frametitle{Objetivos}
 \large
 \begin{block}{Objetivo Geral}
-Estudar o problema de sequenciamento em uma única máquina com tempos de \textit{setup} dependentes da sequência, minimizando o tempo total para completar o processamento.
+
 \end{block}
 \pause
 \begin{block}{Objetivos Específicos}
 \begin{itemize}
-\item Coletar dados referentes ao número de modelos de placas produzidas, os insumos utilizados e aos atuais tempos de \textit{setup};
-\item Implementar dois métodos, sendo um de otimização baseado em programação dinâmica, e outro da regra de menor tempo de \textit{setup} em algoritmo guloso;
-\item Testar os métodos utilizando os dados coletados e instâncias clássicas da literatura, cujas soluções ótimas são conhecidas.
-\item Comparar o desempenho entre os dois métodos.
+\item 
+\item 
+\item 
+\item 
 \end{itemize}
 
 \end{block}
@@ -156,7 +131,7 @@ Estudar o problema de sequenciamento em uma única máquina com tempos de \texti
     ] 
 \end{frame}
 %-------------------------------------------------
-	\subsection{Problemas de Sequenciamento}
+\subsection{Problemas de Sequenciamento}
 \begin{frame}
 \frametitle{Problemas de Sequenciamento}
 \begin{block}{Scheduling}
@@ -168,54 +143,6 @@ Identificar os problemas de \textit{scheduling} de forma individual
 \end{block}
 
 \end{frame}    
-
-%------------------------------------------------
-\subsection{Problema Máquina Única}
-\begin{frame}{Problema $1|s_{jk}|C_{max}$}
-\begin{itemize}
-\item De forma simplificada o problema de sequenciamento neste cenário é: 
-\begin{equation}
-1|s_{jk}|C_{max}
-\end{equation}
-\item Entretantro no cotidiano da empresa, a situação é mais complexa: 
-\begin{equation}
-1|s_{jk}, r_{j},d_{j},prmp,prec|C_{max}
-\end{equation}
-
-
-
-\item O \textit{Makespan} é definido, matematicamente, por: 
-\begin{equation}
-C_{max} = \sum_{j=1}^{n}p[j] + \sum_{j=1}^{n}s[j-1],[j]
-\end{equation}
-
-\end{itemize}
-\end{frame}
-%------------------------------------------------
-\subsection{Similaridades com o Problema do Caixeiro Viajante}
-\begin{frame}{Similaridades com o Problema do Caixeiro Viajante}
-\begin{block}{Definição}
-\begin{center}
-``Um vendedor precisa passar por várias cidades afim de vender seus produtos e precisa descobrir o menor percurso entre estas cidades, passando apenas uma vez por cada uma e retornar para a cidade inicial, economizando tempo e custos de transporte''.\\
-
-\textbf{Qual seria a melhor rota a ser escolhida?}
-\end{center}
-\end{block}
-\begin{figure}[h]
-\centering
-\subfloat[Representação das cidades a serem visitadas]{
-\includegraphics[scale=0.5]{Imagem5}
-\label{fig:grafo}
-}
-\quad 
-\subfloat[Esquema exemplificando o tempo de setup entre modelos]{
-\includegraphics[scale=0.5]{Imagem6}
-\label{fig:grafoPlacas}
-}
-\caption{Comparação do Problema $1|s_{jk}|C_{max}$ com o Caixeiro Viajante}
-\label{fig01}
-\end{figure}
-\end{frame}
 
 %------------------------------------------------
 \section{Resultados Parciais}
