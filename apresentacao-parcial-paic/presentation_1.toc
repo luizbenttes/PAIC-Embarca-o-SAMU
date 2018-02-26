@@ -1,13 +1,13 @@
-\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\select@language {brazil}
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
 \beamer@sectionintoc {2}{Justificativa}{5}{0}{2}
-\beamer@sectionintoc {3}{Objetivos}{8}{0}{3}
-\beamer@sectionintoc {4}{Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{11}{0}{4}
-\beamer@subsectionintoc {4}{1}{Problemas de Sequenciamento}{12}{0}{4}
-\beamer@subsectionintoc {4}{2}{Problema M\IeC {\'a}quina \IeC {\'U}nica}{13}{0}{4}
-\beamer@subsectionintoc {4}{3}{Similaridades com o Problema do Caixeiro Viajante}{14}{0}{4}
-\beamer@sectionintoc {5}{Resultados Parciais}{15}{0}{5}
-\beamer@subsectionintoc {5}{1}{M\IeC {\'e}todos Implementados}{16}{0}{5}
-\beamer@subsectionintoc {5}{2}{Resultados}{17}{0}{5}
+\beamer@sectionintoc {3}{Objetivos}{11}{0}{3}
+\beamer@sectionintoc {4}{Fundamentação Teórica}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Curvas B-spline}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Python + OpenGL}{18}{0}{4}
+\beamer@sectionintoc {5}{Resultados Parciais}{19}{0}{5}
+\beamer@subsectionintoc {5}{1}{Vista Lateral}{20}{0}{5}
+\beamer@subsectionintoc {5}{2}{Vista Superior}{21}{0}{5}
 \beamer@sectionintoc {6}{Trabalhos Futuros}{22}{0}{6}
-\beamer@sectionintoc {7}{Cronograma}{25}{0}{7}
-\beamer@sectionintoc {8}{Referencial Bibliogr\IeC {\'a}fico}{26}{0}{8}
+\beamer@sectionintoc {7}{Cronograma}{24}{0}{7}
+\beamer@sectionintoc {8}{Referencial Bibliográfico}{25}{0}{8}

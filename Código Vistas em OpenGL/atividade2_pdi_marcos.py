@@ -29,7 +29,7 @@ def frange(start, stop, step):
 def Init():
 	delta = 1/prec
 
-	glClearColor(0.0,0.0,0.0,0.0)
+	glClearColor(8,6,9,0.6)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 	
 
@@ -37,7 +37,7 @@ def Init():
 		glMap1f(GL_MAP1_VERTEX_3,0.0,1.0,pontos[i])
 		glEnable(GL_MAP1_VERTEX_3)
 
-		glColor3f(1.5,1.0,0.3)
+		glColor3f(0,0,0)
 		thickness=0.1
 		glLineWidth(thickness)
 		glBegin(GL_LINE_STRIP)
