@@ -14,6 +14,7 @@
 \usepackage[brazil]{babel}
 \setbeamercolor{alerted text}{fg=blue}
 \usepackage{subfig}
+\usepackage{amsmath}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
@@ -110,6 +111,10 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \begin{itemize}
 	\item Atributos em relação à integridade estrutural devem ser atendidos
 	\item \alert{Modelo atual representa um projeto desenvolvido para meios marítimos}
+	\begin{itemize}
+		\item Distancia-se da realidade Fluvial do Amazonas
+		\item Diferença da via e variações da água contribuem no desconforto
+	\end{itemize}
 	\item Propor modelo que possa atender a população da melhor maneira possível  
 \end{itemize}
 \end{frame}
@@ -122,15 +127,7 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 	\item \alert{Propor modelo que possa atender a população da melhor maneira possível}  
 \end{itemize}
 \end{frame}
-%------------------------------------------------
-\begin{frame}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.37]{img}
-\caption{}
-\label{fig:modelo}
-\end{figure}
-\end{frame}
+
 %------------------------------------------------
 \section{Objetivos}
 %------------------------------------------------
@@ -178,7 +175,15 @@ Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos 
 	
 \end{block}
 \end{frame}
-
+%------------------------------------------------
+\begin{frame}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.37]{img}
+	\caption{Modelo proposto para otimização da embarcação}
+	\label{fig:modelo}
+\end{figure}
+\end{frame}
 %------------------------------------------------
 \section{Fundamentação Teórica}
 %------------------------------------------------
@@ -204,11 +209,30 @@ Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos 
 		S(u) = \sum_{j = 0}^{n} {P_j B_j^n(u)} = \sum_{j = 0}^{n} {X_j B_j^n(u),Y_j B_j^n(u)}
 	\end{equation}
 \end{block}
-\pause
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{bspline}
 	\caption{Exemplo de Curva B-spline}
+	\label{fig:bspline}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Geração Paramétrica de Cascos de Planeio}
+\begin{frame}{Geração Paramétrica de Cascos de Planeio}
+\begin{itemize}
+	\item Artigo de F. Pérez-Arribas.
+	\item Método para desenvolver a curva apenas utilizando os parâmetros de construção do barco.
+	\item Dado os \textbf{Parâmetros da Embarcação}, as \textbf{Restrições das Curvas} e \textbf{Equação da Curva de B-spline} pode-se determinar os pontos de controle.
+	
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{vistas}
+	\caption{Exemplo das vistas geradas utilizando o método de F.Pérez-Arribas}
 	\label{fig:bspline}
 \end{figure}
 \end{frame}
@@ -252,21 +276,130 @@ Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos 
 			\item Linha \textit{Sheer}
 			\item Linha \textit{Chine}
 		\end{itemize}
-	
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.2]{bspline}
+	\includegraphics[scale=0.4]{vistalateral}
 	\caption{Exemplo de Curva B-spline}
 	\label{fig:central}
 \end{figure}
-
 \end{frame}
 %-----------------------------------------------
-\subsection{Vista Superior}
-\begin{frame}{Vista Superior}
+\begin{frame}{Vista Lateral - Central}
+\begin{block}{Linha Central}
+	\begin{equation}
+		\centering
+		c(u) = B^3_0K_0 +B^3_1P_1+B^3_2P_2+B^3_3K_2
+	\end{equation}
+\end{block}
+\begin{itemize}
+	\item Restrições:
+	\begin{enumerate}
+		\item $c'_z(0) = 0$
+		\item $c'_z(1) = tg(a_k)$
+		\item $c(u*) = K_1$
+	\end{enumerate}
+	\item Tal que $u* = \dfrac{Dist(K_0,K_1)^k}{Dist(K_0,K_1)^k + Dist(K_1,K_2)^k}$
+	\item Com as restrições acima podemos montar a matriz:
+\end{itemize}	
+	\begin{bmatrix}
+		0 & 1 & 0 & 0 \\
+		0 & 0 & $-tg(a_k)$ & 1 \\
+		$B^3_1(u*)$ & 0 & $B^3_2(u*)$ & 0 \\
+		0 & $B^3_1(u*)$&0 &$B^3_2(u*)$
+	\end{bmatrix}
+	\begin{bmatrix}
+		$XP_1$\\
+		$ZP_1$\\
+		$XP_2$\\
+		$ZP_2$
+	\end{bmatrix}
+	$=$
+	\begin{bmatrix}
+		$0$\\
+		$H_s - tg(a_k).L_s$\\
+		$L_c- B^3_0(u*)L_0$\\
+		$H_c - B^3_3(u*).H_s$
+	\end{bmatrix}
 \end{frame}
 
+%----------------------------------------------
+
+\begin{frame}{Vista Lateral - Sheer}
+\begin{block}{Linha Sheer}
+	\begin{equation}
+	\centering
+	s_L(u) = B^2_0S'_0 +B^2_1P_1+B^2_2S'_2
+	\end{equation}
+\end{block}
+\begin{itemize}
+	\item Restrições:
+	\begin{enumerate}
+		\item $s_L(0) = S'_0$
+		\item $s_L(1) = S'_2$
+		\item $s'_L(0) = tg(B'_s)$
+		\item $s'_L(1) = tg(a'_s)$
+	\end{enumerate}
+	\item Com as restrições acima podemos montar a matriz:
+\end{itemize}
+\centering	
+\begin{bmatrix}
+	$tg(B'_s)$ & -1 \\
+	$-tg(a'_s)$ & 1 \\
+\end{bmatrix}
+\begin{bmatrix}
+	$XP_1$\\
+	$ZP_1$
+\end{bmatrix}
+$=$
+\begin{bmatrix}
+	$-h_s$\\
+	$H_s - tg(a'_s).L_s$
+\end{bmatrix}
+\end{frame}
+
+%----------------------------------------------
+
+\begin{frame}{Vista Lateral - Chine}
+\begin{block}{Linha Chine}
+	\begin{equation}
+	\centering
+	c_L(u) = B^3_0C'_0 +B^3_1P_1+B^3_2P_2+B^3_3C'_2
+	\end{equation}
+\end{block}
+\begin{itemize}
+	\item Restrições:
+	\begin{enumerate}
+		\item $c'_z(0) = 0$
+		\item $c'_z(1) = tg(a_k)$
+		\item $c(u*) = K_1$
+	\end{enumerate}
+	\item Tal que $u* = \dfrac{Dist(K_0,K_1)^k}{Dist(K_0,K_1)^k + Dist(K_1,K_2)^k}$
+	\item Com as restrições acima podemos montar a matriz:
+\end{itemize}	
+\begin{bmatrix}
+	$-tg(B'_c)$ & 1 & 0 & 0 \\
+	0 & 0 & $-tg(a'_c)$ & 1 \\
+	$B^3_1(u*)$ & 0 & $B^3_2(u*)$ & 0 \\
+	0 & $B^3_1(u*)$& 0 &$B^3_2(u*)$
+\end{bmatrix}
+\begin{bmatrix}
+	$XP_1$\\
+	$ZP_1$\\
+	$XP_2$\\
+	$ZP_2$
+\end{bmatrix}
+$=$
+\begin{bmatrix}
+	$h_c$\\
+	$H_c - tg(a'_c).L_c$\\
+	$Xc1- B^3_3(u*)L_c$\\
+	$Zc1 - B^3_0(u*).H_c$
+\end{bmatrix}
+\end{frame}
+
+%----------------------------------------------
+\subsection{Vista Superior}
 %----------------------------------------------
 \section{Trabalhos Futuros}
 %----------------------------------------------

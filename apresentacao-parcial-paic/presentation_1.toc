@@ -1,13 +1,13 @@
-\select@language {brazil}
 \beamer@sectionintoc {1}{Introdução}{3}{0}{1}
 \beamer@sectionintoc {2}{Justificativa}{5}{0}{2}
-\beamer@sectionintoc {3}{Objetivos}{11}{0}{3}
+\beamer@sectionintoc {3}{Objetivos}{10}{0}{3}
 \beamer@sectionintoc {4}{Fundamentação Teórica}{15}{0}{4}
 \beamer@subsectionintoc {4}{1}{Curvas B-spline}{16}{0}{4}
-\beamer@subsectionintoc {4}{2}{Python + OpenGL}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{Geração Paramétrica de Cascos de Planeio}{17}{0}{4}
+\beamer@subsectionintoc {4}{3}{Python + OpenGL}{18}{0}{4}
 \beamer@sectionintoc {5}{Resultados Parciais}{19}{0}{5}
 \beamer@subsectionintoc {5}{1}{Vista Lateral}{20}{0}{5}
-\beamer@subsectionintoc {5}{2}{Vista Superior}{21}{0}{5}
-\beamer@sectionintoc {6}{Trabalhos Futuros}{22}{0}{6}
-\beamer@sectionintoc {7}{Cronograma}{24}{0}{7}
-\beamer@sectionintoc {8}{Referencial Bibliográfico}{25}{0}{8}
+\beamer@subsectionintoc {5}{2}{Vista Superior}{24}{0}{5}
+\beamer@sectionintoc {6}{Trabalhos Futuros}{24}{0}{6}
+\beamer@sectionintoc {7}{Cronograma}{26}{0}{7}
+\beamer@sectionintoc {8}{Referencial Bibliográfico}{27}{0}{8}
