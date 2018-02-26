@@ -4,14 +4,15 @@
 
 \mode<presentation> {
 
-\usetheme{Madrid}
+\usetheme{Boadilla}
 
 \setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
-%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
+\setbeamercolor{alerted text}{fg=blue}
 \usepackage{subfig}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
@@ -57,8 +58,7 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \frametitle{Introdução}
 \begin{itemize}
 	\item Para prestar socorro à população em atendimentos de urgência e emergência em saúde, as regiões sem acesso terrestre contam com o serviço de SAMU Fluvial.
-	\item Atendimento similiar às ambulâncias terrestres.
-	\item Projetos Marítimos x Projetos Fluviais
+	\item Atendimento similar às ambulâncias terrestres.
 \end{itemize}
 
 \begin{figure}[h]
@@ -84,11 +84,53 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \begin{frame}
 \frametitle{Justificativa}
 \begin{itemize}
-
+\item Atributos em relação à integridade estrutural devem ser atendidos
+\item Modelo atual representa um projeto desenvolvido para meios marítimos.
+\item Propor modelo que possa atender a população da melhor maneira possível  
 \end{itemize}
+\end{frame}
+%-------------------------------------------------
 
+\begin{frame}
+\frametitle{Justificativa}
+\begin{itemize}
+	\item \alert{Atributos em relação à integridade estrutural devem ser atendidos}
+	\begin{itemize}
+		\item Estrutura suporte as cargas
+		\item Ergonomia e bem-estar da tripulação
+	\end{itemize}
+	\item Modelo atual representa um projeto desenvolvido para meios marítimos.
+	\item Propor modelo que possa atender a população da melhor maneira possível  
+\end{itemize}
 \end{frame}
 
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Justificativa}
+\begin{itemize}
+	\item Atributos em relação à integridade estrutural devem ser atendidos
+	\item \alert{Modelo atual representa um projeto desenvolvido para meios marítimos}
+	\item Propor modelo que possa atender a população da melhor maneira possível  
+\end{itemize}
+\end{frame}
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Justificativa}
+\begin{itemize}
+	\item Atributos em relação à integridade estrutural devem ser atendidos
+	\item Modelo atual representa um projeto desenvolvido para meios marítimos
+	\item \alert{Propor modelo que possa atender a população da melhor maneira possível}  
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.37]{img}
+\caption{}
+\label{fig:modelo}
+\end{figure}
+\end{frame}
 %------------------------------------------------
 \section{Objetivos}
 %------------------------------------------------
@@ -104,21 +146,38 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
 \frametitle{Objetivos}
 \large
 \begin{block}{Objetivo Geral}
-
+Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos para auxiliar no projeto de embarcações de alta velocidade, como as ambulanchas.
 \end{block}
 \pause
 \begin{block}{Objetivos Específicos}
 \begin{itemize}
-\item 
-\item 
-\item 
-\item 
+\item Identificar métodos de construção de embarcações;
+\item Desenhar o casco da embarcação através dos parâmetros de construção;
+\item Propor algoritmo evolutivos para a otimização de variáveis do projeto
+\item Implementar uma ferramenta computacional com interface amigável para auxiliar os projetistas desse tipo de embarcação.
+\item Sugerir modelos de embarcações otimizadas.
 \end{itemize}
 
 \end{block}
-
 \end{frame}
-
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Objetivos}
+\large
+\begin{block}{Objetivo Geral}
+	Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos para auxiliar no projeto de embarcações de alta velocidade, como as ambulanchas.
+\end{block}
+\begin{block}{Objetivos Específicos}
+	\begin{itemize}
+		\item \alert{Identificar métodos de construção de embarcações;}
+		\item \alert{Desenhar o casco da embarcação através dos parâmetros de construção;}
+		\item Propor algoritmo evolutivo para a otimização de variáveis do projeto
+		\item Implementar uma ferramenta computacional com interface amigável para auxiliar os projetistas desse tipo de embarcação.
+		\item Sugerir modelos de embarcações otimizadas.
+	\end{itemize}
+	
+\end{block}
+\end{frame}
 
 %------------------------------------------------
 \section{Fundamentação Teórica}
@@ -131,16 +190,45 @@ Universidade do Estado do Amazonas \\ Escola Superior de Tecnologia -- EST\\ Man
     ] 
 \end{frame}
 %-------------------------------------------------
-\subsection{Problemas de Sequenciamento}
-\begin{frame}
-\frametitle{Problemas de Sequenciamento}
-\begin{block}{Scheduling}
-“Um processo de decisão utilizado regularmente em muitas indústrias de manufatura e de serviços, que lida com a alocação de recursos para tarefas através de dados períodos de tempo e seu objetivo é otimizar um ou mais critérios” \cite{pinedo2015scheduling}. 
-\end{block}
 
-\begin{block}{Notação de Graham}
-Identificar os problemas de \textit{scheduling} de forma individual
+\subsection{Curvas B-spline}
+\begin{frame}{Curvas B-spline}
+\begin{itemize}
+\item Comumente usada na Engenharia Naval
+\item Trata-se de uma curva formada por partes polinomiais
+\item Polígono de Controle 
+\end{itemize}
+
+\begin{block}{Definição}
+	\begin{equation}
+		S(u) = \sum_{j = 0}^{n} {P_j B_j^n(u)} = \sum_{j = 0}^{n} {X_j B_j^n(u),Y_j B_j^n(u)}
+	\end{equation}
 \end{block}
+\pause
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{bspline}
+	\caption{Exemplo de Curva B-spline}
+	\label{fig:bspline}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Python + OpenGL}
+\begin{frame}
+\frametitle{Python + OpenGL}
+\begin{itemize}
+	\item OpenGL é uma API livre utilizada na computação gráfica
+	\item GLUT - Interface para desenho das curvas. 
+\end{itemize}
+
+\begin{figure}[h]	
+\centering
+\includegraphics[width=4cm]{Python}
+\qquad
+\includegraphics[width=4cm]{logoopengl}
+\end{figure}
 
 \end{frame}    
 
@@ -155,69 +243,30 @@ Identificar os problemas de \textit{scheduling} de forma individual
     ] 
 \end{frame}
 %-------------------------------------------------
-\subsection{Métodos Implementados}
-\begin{frame}{Métodos Implementados}
-\Large
+\subsection{Vista Lateral}
+\begin{frame}{Vista Lateral}
 \begin{itemize}
-\item Algoritmo Guloso
-\begin{itemize}
-\large
-\item Regra de Liberação de menor tempo de \textit{setup}.\cite{pacheco2001adoccao} 
+	\item Formada por 3 curvas principais:
+		\begin{itemize}
+			\item Linha Central
+			\item Linha \textit{Sheer}
+			\item Linha \textit{Chine}
+		\end{itemize}
+	
 \end{itemize}
-\bigskip
-\item Programação Dinâmica
-\begin{itemize}
-\large
-\item Recursão com apoio de tabela 
-\end{itemize}
-\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{bspline}
+	\caption{Exemplo de Curva B-spline}
+	\label{fig:central}
+\end{figure}
 
 \end{frame}
 %-----------------------------------------------
-\subsection{Resultados}
-\begin{frame}{Resultados}
-Regra MST(Algoritmo Guloso):
-\begin{table}[h]
-\includegraphics[scale=0.6]{Tabela1}
-\end{table}
-Otimização por PD:
-\begin{table}[h]
-\includegraphics[scale=0.5]{Tabela2}
-\end{table}
+\subsection{Vista Superior}
+\begin{frame}{Vista Superior}
 \end{frame}
 
-%----------------------------------------------
-\begin{frame}{Resultados -- Instância P01 }
-$n = 15$
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{GraficoP01}
-\end{figure}
-\end{frame}
-%---------------------------------------------
-\begin{frame}{Resultados -- Instância Ulysses16}
-$n = 16$
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{GraficoU16}
-\end{figure}
-\end{frame}
-%----------------------------------------------
-\begin{frame}{Resultados -- Instância GR17 }
-$n = 17$
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{GraficoGR17}
-\end{figure}
-\end{frame}
-%----------------------------------------------
-\begin{frame}{Resultados -- Instância J22 }
-$n = 22$
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{GraficoJ22}
-\end{figure}
-\end{frame}
 %----------------------------------------------
 \section{Trabalhos Futuros}
 %----------------------------------------------
@@ -230,16 +279,7 @@ $n = 22$
 \end{frame}
 %-------------------------------------------------
 \begin{frame}{Trabalhos Futuros}
-\begin{block}{}
-\Large
-Implementação de Algoritmos Heurísticos para ampliação do tamanho da instância.
-\end{block}
-\pause
-\begin{block}{}
-\Large
-Desenvolvimento de outras restrições do problema geral:
-$1|s_{jk}, r_{j},d_{j},prmp,prec|C_{max}$
-\end{block}
+
 \end{frame}
 
 %----------------------------------------------
