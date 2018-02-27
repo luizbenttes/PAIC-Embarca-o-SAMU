@@ -4,19 +4,17 @@ from OpenGL.GLUT import *
 import sys
 
 TOTAL = 4 #numero de pontos
-prec = 80#total de pontos intermediarios
+prec = 80 #total de pontos intermediarios
 LARGURA = 600
 ALTURA = 600
 
 tam = 100
-quant = 2 #quantidade de curvas a serem mostradas''
+quant = 2#quantidade de curvas a serem mostradas''
 
-# pontos = [[[66.5, 0.0, 0.0], [91.701537401368, 0.0, 0.0], [105.71495612196605, 6.1644346721947407, 0.0], [124.0, 16.3, 0.0]],
-# 			[[0, 12.8, 0.0], [76.468254918831391, 15.470330303456716, 0.0], [124.0, 16.3, 0.0]],
-# 			[[0, 3.3,0.0], [47.897336317074284, 3.2999999999999998,0.0], [66.275645365241274, 4.4365630301171066,0.0], [114.4, 11.2,0.0]]]
-#			[[0, -11.1, 0.0], [19.707890300631821, -10.842545907638371, 0.0], [106.19223310320206, -21.9907607050948, 0.0], [124.0, 0, 0.0]],
-pontos = [[[35, 10.2, 0.0], [87.40186897054636, 13.287516898683384, 0.0], [82.894960457728786, 14.026947335998877, 0.0], [114.4, 0, 0.0]],
-			[[0, -9.2, 0.0], [38.730828282414706, -6.5822834252897744, 0.0], [67.862493010446258, -19.753999726244025, 0.0], [114.4, 0.0, 0.0]]]
+# pontos = [0, 11.1,0.0], [19.70789030063182, 10.842545907638371,0.0], [106.19223310320206, 21.9907607050948,0.0], [124.0, 0,0.0]],[[0, -11.1, 0.0], 
+			#[19.707890300631821, -10.842545907638371, 0.0], [106.19223310320206, -21.9907607050948, 0.0], [124.0, 0, 0.0]],
+pontos = [[[0, 10.2, 0.0], [40.639529044153015, 10.231712954175999,0.0], [85.5822307683592, 13.232417298171537,0.0], [114.4, 0,0.0]],
+			[[0, -10.2, 0.0], [40.639529044153015, -10.231712954175999,0.0], [85.5822307683592, -13.232417298171537,0.0], [114.4, 0,0.0]]]
 
 def frange(start, stop, step):
 	i = start
@@ -46,8 +44,8 @@ def Init():
 		# glRasterPos2f(125, 0)
 		# glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, 33)
 		# glBegin(GL_LINES)
-		# glVertex2f(0,0)   
-		# glVertex2f(66.5, 0)
+		# glVertex2f(0, 0)   
+		# glVertex2f(124, 0)
 		# glEnd()
 
 
@@ -69,8 +67,8 @@ def Init():
 				glVertex3fv(pontos[i][j])
 		glEnd();
 
-		# glColor3f(0.0,1.0,1.0)
-		# glPointSize(5)
+		glColor3f(0.0,1.0,1.0)
+		glPointSize(5)
 
 
 
@@ -133,7 +131,7 @@ glutInit(sys.argv)
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
 glutInitWindowSize(LARGURA, ALTURA)
 glutInitWindowPosition(250,70)
-glutCreateWindow(b'Vista Lateral')
+glutCreateWindow(b'Linha Chine')
 
 glutDisplayFunc(Init)
 glutReshapeFunc(reshape)

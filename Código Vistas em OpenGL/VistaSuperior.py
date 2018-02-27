@@ -55,10 +55,10 @@ def MatrixSheer(Ls, Bs, alphaS, S0, Sx, S2,k):
 
 	derivate = True
 	b_0 = -(bs.Bj(3,0,derivate,u)*Bs)
-	b_1 = - (np.tan(alphaS)*Ls)
+	b_1 =  (- np.tan(alphaS))*Ls
 	derivate = False
 	b_2 = Sx[0] - (bs.Bj(3,3,derivate,u)*Ls)
-	b_3 = Sx[1] - (bs.Bj(3,1,derivate,u)*Bs)
+	b_3 = Sx[1] - (bs.Bj(3,0,derivate,u)*Bs)
 
 	B = [b_0,b_1,b_2,b_3]
 	print("B: ",B)
@@ -85,7 +85,7 @@ def MatrixConstructor():
 	beta_S = np.deg2rad(2)
 	beta_C = np.deg2rad(0)
 	alpha_C = np.deg2rad(8)
-	alphaC = np.deg2rad(180 - 24)
+	alphaC = np.deg2rad(180 - 23)
 	betaC = 0
 	alphak = np.deg2rad(29)
 
@@ -100,14 +100,14 @@ def MatrixConstructor():
 	Sx = [Lx,Bx]
 	Cx = [80, 80]
 	S2 = [Ls,0]
-
-	C0 = [35,Bc]
+	Cx = [Lx-7,Bx-7]
+	C0 = [0,Bc-2]
 	C2 = [Lc,0]
 
 
 	#A_center,B_center = MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=0.5)
 	A_sheer, B_sheer =  MatrixSheer(Ls, Bs, alphaS, S0, Sx, S2, k=1)
-	A_chine, B_chine =  MatrixChine(Lc, Bc, alphaC, C0, Sx, C2, k=1)
+	A_chine, B_chine =  MatrixSheer(Lc, Bc, alphaC, C0, Cx, C2, k=1)
 	#A_chine, B_chine =  MatrixChine(Lc, Hc, hc, alpha_C, beta_C, C_0, C_1, C_2, k=1)
 
 	return A_sheer, B_sheer, S0, S2, A_chine, B_chine, C0, C2

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.6.4)  27 FEB 2018 00:42
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.6.4)  27 FEB 2018 11:48
  restricted system commands enabled.
 **presentation_1.tex
 (./presentation_1.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.705 seconds
+luaotfload | main : initialization completed in 0.670 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (C:/Users/luizb/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/beamer.cls
 Document Class: beamer 2017/01/23 v3.41 A class for typesetting presentations
@@ -2587,40 +2587,38 @@ Package luatex.def Info: chinelineplan.jpg used on input line 568.
  [36
 
 <./chinelineplan.jpg>]
-File: linhachine.png Graphic file (type png)
- <use linhachine.png>
-Package luatex.def Info: linhachine.png used on input line 576.
-(luatex.def)             Requested size: 256.0748pt x 198.12488pt.
+<linhachineplan.jpg, id=369, 451.6875pt x 393.72093pt>
+File: linhachineplan.jpg Graphic file (type jpg)
+
+<use linhachineplan.jpg>
+Package luatex.def Info: linhachineplan.jpg used on input line 576.
+(luatex.def)             Requested size: 256.0748pt x 223.22173pt.
  [37
 
-]
+<./linhachineplan.jpg>]
+<superioropengl.jpg, id=375, 452.4403pt x 417.05812pt>
+File: superioropengl.jpg Graphic file (type jpg)
 
-! LaTeX Error: File `superioropengl' not found.
+<use superioropengl.jpg>
+Package luatex.def Info: superioropengl.jpg used on input line 583.
+(luatex.def)             Requested size: 256.0748pt x 236.04555pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.583 \end{frame}
-               
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \vbox (10.78517pt too high) detected at line 583
+ []
 
 [38
 
-] (./presentation_1.toc) [39
+<./superioropengl.jpg>] (./presentation_1.toc) [39
 
 ] [40
 
 ] [41
 
-] (./presentation_1.bbl) [42
+]
+(./presentation_1.bbl) [42
 
 <C:/Users/luizb/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/art/beamericonarticl
-e.pdf>]
-[43
+e.pdf>] [43
 
 ]
 \tf@nav=\write6
@@ -2646,14 +2644,14 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20240 strings out of 494481
+ 20232 strings out of 494481
  100000,460012 words of node,token memory allocated
  4558 words of node memory still in use:
    31 hlist, 11 vlist, 2 rule, 47 disc, 8 local_par, 112 glue, 21 kern, 16 penal
 ty, 332 glyph, 57 attribute, 61 glue_spec, 57 attribute_list, 3 write, 16 pdf_co
 lorstack nodes
    avail lists: 2:1737,3:754,4:186,5:122,6:1469,7:1122,8:95,9:637,10:13,11:274
- 23087 multiletter control sequences out of 65536+200000
+ 23095 multiletter control sequences out of 65536+200000
  68 fonts using 5197247 bytes
  56i,13n,62p,779b,740s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmsans10-oblique.otf><c:/p
@@ -2669,9 +2667,9 @@ ss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentation_1.pdf (43 pages, 1614363 bytes).
+Output written on presentation_1.pdf (43 pages, 1660893 bytes).
 
-PDF statistics: 491 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 493 PDF objects out of 1000 (max. 8388607)
  107 named destinations out of 1000 (max. 131072)
  192 words of extra memory for PDF output out of 10000 (max. 100000000)
 
