@@ -9,16 +9,14 @@ LARGURA = 600
 ALTURA = 600
 
 tam = 100
-quant = 4 #quantidade de curvas a serem mostradas''
+quant = 2 #quantidade de curvas a serem mostradas''
 
 # pontos = [[[66.5, 0.0, 0.0], [91.701537401368, 0.0, 0.0], [105.71495612196605, 6.1644346721947407, 0.0], [124.0, 16.3, 0.0]],
 # 			[[0, 12.8, 0.0], [76.468254918831391, 15.470330303456716, 0.0], [124.0, 16.3, 0.0]],
 # 			[[0, 3.3,0.0], [47.897336317074284, 3.2999999999999998,0.0], [66.275645365241274, 4.4365630301171066,0.0], [114.4, 11.2,0.0]]]
-
-pontos = [[[0, 11.1, 0.0], [19.707890300631821, 10.842545907638371, 0.0], [106.19223310320206, 21.9907607050948, 0.0], [124.0, 0, 0.0]],
-			[[0, -11.1, 0.0], [19.707890300631821, -10.842545907638371, 0.0], [106.19223310320206, -21.9907607050948, 0.0], [124.0, 0, 0.0]],
-			[[0, 10.2, 0.0], [48.175123682594453, 6.5822834252897744, 0.0], [70.031790183162144, 19.753999726244025, 0.0], [114.4, 0, 0.0]],
-			[[0, -10.2, 0.0], [50.730828282414706, -6.5822834252897744, 0.0], [67.862493010446258, -19.753999726244025, 0.0], [114.4, 0.0, 0.0]]]
+#			[[0, -11.1, 0.0], [19.707890300631821, -10.842545907638371, 0.0], [106.19223310320206, -21.9907607050948, 0.0], [124.0, 0, 0.0]],
+pontos = [[[35, 10.2, 0.0], [87.40186897054636, 13.287516898683384, 0.0], [82.894960457728786, 14.026947335998877, 0.0], [114.4, 0, 0.0]],
+			[[0, -9.2, 0.0], [38.730828282414706, -6.5822834252897744, 0.0], [67.862493010446258, -19.753999726244025, 0.0], [114.4, 0.0, 0.0]]]
 
 def frange(start, stop, step):
 	i = start
@@ -29,7 +27,7 @@ def frange(start, stop, step):
 def Init():
 	delta = 1/prec
 
-	glClearColor(8,6,9,0.6)
+	glClearColor(0,0,0,0)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 	
 
@@ -37,33 +35,38 @@ def Init():
 		glMap1f(GL_MAP1_VERTEX_3,0.0,1.0,pontos[i])
 		glEnable(GL_MAP1_VERTEX_3)
 
-		glColor3f(0,0,0)
-		thickness=0.1
+		glColor3f(1,0,0)
+		thickness=2
 		glLineWidth(thickness)
 		glBegin(GL_LINE_STRIP)
 		for j in frange(0.0,1.0,delta):
 			glEvalCoord1f(round(j,2))
 		glEnd()
 
-		glRasterPos2f(125, 0)
-		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, 33)
-		glBegin(GL_LINES)
-		glVertex2f(0,0)   
-		glVertex2f(124.0, 0)
-		glEnd()
+		# glRasterPos2f(125, 0)
+		# glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, 33)
+		# glBegin(GL_LINES)
+		# glVertex2f(0,0)   
+		# glVertex2f(66.5, 0)
+		# glEnd()
 
 
 		# PONTOS
 	
-		glColor3f(0.0,1.0,0.0)
-		glPointSize(5)
+		
+		glPointSize(8)
 
 		glBegin(GL_POINTS)
 		
 		aux = len((pontos[i]))
 
 		for j in range(0,aux):
-			glVertex3fv(pontos[i][j])
+			if (j == 0) or (j == len(pontos[i])-1):
+				glColor3f(0.0,1.0,0.0)
+				glVertex3fv(pontos[i][j])
+			else:
+				glColor3f(1.0,0.0,0.6)
+				glVertex3fv(pontos[i][j])
 		glEnd();
 
 		# glColor3f(0.0,1.0,1.0)
@@ -71,9 +74,9 @@ def Init():
 
 
 
-		glBegin(GL_POINTS)
-		glVertex3fv([114.4,11.2,0.0])
-		glEnd()
+		# glBegin(GL_POINTS)
+		# glVertex3fv([114.4,11.2,0.0])
+		# glEnd()
 		glEnable(GL_DEPTH_TEST)
 
 	
@@ -130,7 +133,7 @@ glutInit(sys.argv)
 glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB)
 glutInitWindowSize(LARGURA, ALTURA)
 glutInitWindowPosition(250,70)
-glutCreateWindow(b'Curvas de Bezier')
+glutCreateWindow(b'Vista Lateral')
 
 glutDisplayFunc(Init)
 glutReshapeFunc(reshape)

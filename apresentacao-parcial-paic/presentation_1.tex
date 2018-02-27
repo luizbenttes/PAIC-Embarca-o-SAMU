@@ -302,29 +302,42 @@ Propor um modelo de otimização multiobjetivo baseado em Algoritmos Evolutivos 
 	\item Tal que $u* = \dfrac{Dist(K_0,K_1)^k}{Dist(K_0,K_1)^k + Dist(K_1,K_2)^k}$
 	\item Com as restrições acima podemos montar a matriz:
 \end{itemize}	
-	\begin{bmatrix}
-		0 & 1 & 0 & 0 \\
-		0 & 0 & $-tg(a_k)$ & 1 \\
-		$B^3_1(u*)$ & 0 & $B^3_2(u*)$ & 0 \\
-		0 & $B^3_1(u*)$&0 &$B^3_2(u*)$
-	\end{bmatrix}
-	\begin{bmatrix}
-		$XP_1$\\
-		$ZP_1$\\
-		$XP_2$\\
-		$ZP_2$
-	\end{bmatrix}
+\begin{bmatrix}
+$0$ & $1$ & $0$ & $0$ \\
+$0$ & $0$ & $-tg(a_k)$ & $1$ \\
+$B^3_1(u*)$ & $0$ & $B^3_2(u*)$ & $0$ \\
+$0$ & $B^3_1(u*)$ & $0$ & $B^3_2(u*)$
+\end{bmatrix}
+\begin{bmatrix}
+$XP_1$\\
+$ZP_1$\\
+$XP_2$\\
+$ZP_2$
+\end{bmatrix}
 	$=$
-	\begin{bmatrix}
-		$0$\\
-		$H_s - tg(a_k).L_s$\\
-		$L_c- B^3_0(u*)L_0$\\
-		$H_c - B^3_3(u*).H_s$
-	\end{bmatrix}
+\begin{bmatrix}
+$0$\\
+$H_s - tg(a_k).L_s$\\
+$L_c- B^3_0(u*)L_0$\\
+$H_c - B^3_3(u*).H_s$
+\end{bmatrix}
+\end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Central}
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width=9cm]{centerline}
+\end{figure}
 \end{frame}
 
 %----------------------------------------------
-
+\begin{frame}{Vista Lateral - Central}
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width=9cm]{linhacentral}
+\end{figure}
+\end{frame}
+%----------------------------------------------
 \begin{frame}{Vista Lateral - Sheer}
 \begin{block}{Linha Sheer}
 	\begin{equation}
@@ -357,7 +370,21 @@ $=$
 	$H_s - tg(a'_s).L_s$
 \end{bmatrix}
 \end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Sheer}
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width=9cm]{sheerline}
+\end{figure}
+\end{frame}
 
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Sheer}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{linhasheer}
+\end{figure}
+\end{frame}
 %----------------------------------------------
 
 \begin{frame}{Vista Lateral - Chine}
@@ -370,9 +397,9 @@ $=$
 \begin{itemize}
 	\item Restrições:
 	\begin{enumerate}
-		\item $c'_z(0) = 0$
-		\item $c'_z(1) = tg(a_k)$
-		\item $c(u*) = K_1$
+		\item $c'_L(0) = tg(B'_c)$
+		\item $c'_L(1) = tg(a_c)$
+		\item $c_L(u*) = C_1$
 	\end{enumerate}
 	\item Tal que $u* = \dfrac{Dist(K_0,K_1)^k}{Dist(K_0,K_1)^k + Dist(K_1,K_2)^k}$
 	\item Com as restrições acima podemos montar a matriz:
@@ -398,9 +425,163 @@ $=$
 \end{bmatrix}
 \end{frame}
 
+\begin{frame}{Vista Lateral - Central}
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width=9cm]{chineline}
+\end{figure}
+\end{frame}
+
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Central}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{linhachine}
+\end{figure}
+\end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Completa}
+\begin{figure}[h]	
+	\centering
+	\includegraphics[width=9cm]{lateralopengl}
+\end{figure}
+\end{frame}
+%----------------------------------------------
+%----------------------------------------------
 %----------------------------------------------
 \subsection{Vista Superior}
+\begin{frame}{Vista Superior}
+\begin{itemize}
+	\item Formada por 2 curvas principais:
+	\begin{itemize}
+		\item Linha \textit{Sheer}
+		\item Linha \textit{Chine}
+	\end{itemize}
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{vistasuperior}
+	\caption{Exemplo Vista Superior}
+	\label{fig:central}
+\end{figure}
+\end{frame}
+
 %----------------------------------------------
+\begin{frame}{Vista Superior - Sheer}
+\begin{block}{Linha Sheer}
+\begin{equation}
+\centering
+s_P(u) = B^3_0S_0 +B^3_1P_1 + B^3_2P_2 + B^3_3S_2
+\end{equation}
+\end{block}
+\begin{itemize}
+\item Restrições:
+\begin{enumerate}
+\item $s_P(0) = S_0$
+\item $s_P(1) = S_2$
+\item $s_P(u*) = S_X$
+\item $s'_P(1) = tg(a_s)$
+\end{enumerate}
+\item Com as restrições acima podemos montar a matriz:
+\end{itemize}
+\centering	
+\begin{bmatrix}
+	0 & $B'^3_1(u*)$ & 0 & $B'^3_2(u*)$ \\
+	0 & 0 & $-tg(a_s)$ & 1 \\
+	$B^3_1(u*)$ & 0 & $B^3_2(u*)$ & 0 \\
+	0 & $B^3_1(u*)$& 0 &$B^3_2(u*)$
+\end{bmatrix}
+\begin{bmatrix}
+	$XP_1$\\
+	$ZP_1$\\
+	$XP_2$\\
+	$ZP_2$
+\end{bmatrix}
+$=$
+\begin{bmatrix}
+	$-B'^3_0(u*).B_s$\\
+	$- tg(a_s).L_s$\\
+	$Lx- B^3_3(u*)L_s$\\
+	$Bx - B^3_0(u*).B_s$
+\end{bmatrix}
+\end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Sheer}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{sheerlineplan}
+\end{figure}
+\end{frame}
+
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Sheer}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{linhasheerplan}
+\end{figure}
+\end{frame}
+%----------------------------------------------
+
+\begin{frame}{Vista Superior - Chine}
+\begin{block}{Linha Chine}
+\begin{equation}
+\centering
+c_p(u) = B^3_0C_0 +B^3_1P_1+B^3_2P_2+B^3_3C_2
+\end{equation}
+\end{block}
+\begin{itemize}
+\item Restrições:
+\begin{enumerate}
+\item $c'_L(0) = tg(B_c)$
+\item $c'_L(1) = tg(a_c)$
+\item $c_L(u*) = C_1$
+\end{enumerate}
+\item Tal que $u* = \dfrac{Dist(K_0,K_1)^k}{Dist(K_0,K_1)^k + Dist(K_1,K_2)^k}$
+\item Com as restrições acima podemos montar a matriz:
+\end{itemize}	
+\begin{bmatrix}
+$-tg(B_c)$ & 1 & 0 & 0 \\
+0 & 0 & $-tg(a_c)$ & 1 \\
+$B^3_1(u*)$ & 0 & $B^3_2(u*)$ & 0 \\
+0 & $B^3_1(u*)$& 0 &$B^3_2(u*)$
+\end{bmatrix}
+\begin{bmatrix}
+$XP_1$\\
+$ZP_1$\\
+$XP_2$\\
+$ZP_2$
+\end{bmatrix}
+$=$
+\begin{bmatrix}
+$L_c$\\
+$B_c - tg(a_c).L_c$\\
+$ B^3_3(u*)B_c$\\
+$ B^3_0(u*).L_c$
+\end{bmatrix}
+\end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Superior - Chine}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{chinelineplan}
+\end{figure}
+\end{frame}
+
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Central}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{linhachine}
+\end{figure}
+\end{frame}
+%----------------------------------------------
+\begin{frame}{Vista Lateral - Completa}
+\begin{figure}[h]	
+\centering
+\includegraphics[width=9cm]{superioropengl}
+\end{figure}
+\end{frame}
+
 \section{Trabalhos Futuros}
 %----------------------------------------------
 \begin{frame}
@@ -412,6 +593,11 @@ $=$
 \end{frame}
 %-------------------------------------------------
 \begin{frame}{Trabalhos Futuros}
+\begin{itemize}
+	\item Propor algoritmo evolutivo para a otimização de variáveis do projeto
+	\item Implementar uma ferramenta computacional com interface amigável para auxiliar os projetistas desse tipo de embarcação.
+	\item Sugerir modelos de embarcações otimizadas.
+\end{itemize}
 
 \end{frame}
 
@@ -427,10 +613,10 @@ $=$
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{Mês} & \multicolumn{1}{c|}{Atividades}                                                                                                                                                    \\ \hline
-Março                     & \begin{tabular}[c]{@{}l@{}}Implementação do Algoritmo Genético\\ Desenvolvimento do Artigo para CSBC\\ Estudar Operadores Genéticos\end{tabular}                                   \\ \hline
-Abril                     & \begin{tabular}[c]{@{}l@{}}Implementar novos Operadores\\ Desenvolver Componentes Híbridos\\ Implementação de novas restrições do problema geral \textit{Scheduling}\end{tabular} \\ \hline
-Maio                      & \begin{tabular}[c]{@{}l@{}}Desenvolvimento do Artigo para SBPO\\ Execução de Testes com instâncias maiores\\ Teste das novas restrições\end{tabular}                               \\ \hline
-Junho                     & \begin{tabular}[c]{@{}l@{}}Aperfeiçoar AG\\ Teste de novas instâncias\end{tabular}                                                                                                 \\ \hline
+Março                     & \begin{tabular}[c]{@{}l@{}}Desenvolvimento do casco 3D\\ Estudo dos parâmetros a serem otimizados\\Implementação do Algoritmo Genético\end{tabular}                                   \\ \hline
+Abril                     & \begin{tabular}[c]{@{}l@{}}Implementar novos Operadores\\ Desenvolver Componentes Híbridos\end{tabular} \\ \hline
+Maio                      & \begin{tabular}[c]{@{}l@{}}Desenvolvimento de Artigo\\ Desenvolvimento do software para \textit{plotagem} \\e otimização dos parâmetros\end{tabular}                               \\ \hline
+Junho                     & \begin{tabular}[c]{@{}l@{}}Aperfeiçoar AGMO\\\end{tabular}                                                                                                 \\ \hline
 Julho                     & Apresentação Final                                                                                                                                                                 \\ \hline
 \end{tabular}
 \end{table}

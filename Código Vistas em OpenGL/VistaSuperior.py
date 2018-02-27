@@ -101,7 +101,7 @@ def MatrixConstructor():
 	Cx = [80, 80]
 	S2 = [Ls,0]
 
-	C0 = [0,Bc]
+	C0 = [35,Bc]
 	C2 = [Lc,0]
 
 
