@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.6.4)  27 FEB 2018 11:48
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2017.6.4)  28 FEB 2018 13:20
  restricted system commands enabled.
 **presentation_1.tex
 (./presentation_1.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.670 seconds
+luaotfload | main : initialization completed in 0.683 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (C:/Users/luizb/AppData/Roaming/MiKTeX/2.9/tex/latex/beamer/beamer.cls
 Document Class: beamer 2017/01/23 v3.41 A class for typesetting presentations
@@ -1161,17 +1161,25 @@ File: bspline.png Graphic file (type png)
 
 <use bspline.png>
 Package luatex.def Info: bspline.png used on input line 219.
-(luatex.def)             Requested size: 104.99039pt x 84.91574pt.
+(luatex.def)             Requested size: 78.74078pt x 63.68518pt.
 
-Overfull \vbox (2.13821pt too high) detected at line 219
+Overfull \vbox (8.58946pt too high) detected at line 219
  []
 
 [16
 
-<./bspline.png>] <vistas.png, id=241, 754.31813pt x 523.20468pt>
-File: vistas.png Graphic file (type png)
+<./bspline.png>]
 
-<use vistas.png>
+LaTeX Warning: Citation `perez2006automatic' on page 17 undefined on input line 
+238.
+
+
+LaTeX Warning: Citation `morales2013flow' on page 17 undefined on input line 238
+.
+
+<vistas.png, id=241, 754.31813pt x 523.20468pt>
+File: vistas.png Graphic file (type png)
+ <use vistas.png>
 Package luatex.def Info: vistas.png used on input line 238.
 (luatex.def)             Requested size: 150.86095pt x 104.63907pt.
 
@@ -1216,12 +1224,12 @@ Overfull \hbox (8.81017pt too wide) in paragraph at lines 286--286
 
 <./vistalateral.png>]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 324.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 326.
 
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1229,7 +1237,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1237,7 +1245,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1245,7 +1253,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1253,7 +1261,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1261,7 +1269,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1269,7 +1277,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1277,7 +1285,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1285,7 +1293,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1293,7 +1301,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1301,7 +1309,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1309,7 +1317,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1320,7 +1328,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1328,7 +1336,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1336,7 +1344,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1344,7 +1352,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1352,7 +1360,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1360,7 +1368,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1368,7 +1376,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1376,7 +1384,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1384,7 +1392,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1392,7 +1400,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1403,7 +1411,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1411,7 +1419,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1419,7 +1427,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1427,7 +1435,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1435,7 +1443,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1443,7 +1451,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1451,7 +1459,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1459,7 +1467,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.324 \end{frame}
+l.326 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1472,7 +1480,7 @@ my insertion and my current dilemma will both disappear.
 ] <centerline.png, id=282, 655.69969pt x 179.92218pt>
 File: centerline.png Graphic file (type png)
  <use centerline.png>
-Package luatex.def Info: centerline.png used on input line 331.
+Package luatex.def Info: centerline.png used on input line 333.
 (luatex.def)             Requested size: 256.0748pt x 70.26544pt.
 
 [22
@@ -1481,7 +1489,7 @@ Package luatex.def Info: centerline.png used on input line 331.
 File: linhacentral.png Graphic file (type png)
 
 <use linhacentral.png>
-Package luatex.def Info: linhacentral.png used on input line 339.
+Package luatex.def Info: linhacentral.png used on input line 341.
 (luatex.def)             Requested size: 256.0748pt x 200.68134pt.
  [23
 
@@ -1489,7 +1497,7 @@ Package luatex.def Info: linhacentral.png used on input line 339.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1497,7 +1505,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1505,7 +1513,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1513,7 +1521,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1521,7 +1529,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1529,18 +1537,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1548,7 +1545,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1556,7 +1553,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1564,7 +1561,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1572,7 +1569,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1580,18 +1577,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1599,52 +1585,17 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.372 \end{frame}
+l.376 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.372 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [24
 
 ] <sheerline.png, id=300, 769.37437pt x 231.86626pt>
 File: sheerline.png Graphic file (type png)
  <use sheerline.png>
-Package luatex.def Info: sheerline.png used on input line 379.
+Package luatex.def Info: sheerline.png used on input line 383.
 (luatex.def)             Requested size: 256.0748pt x 77.17416pt.
 
 [25
@@ -1653,7 +1604,7 @@ Package luatex.def Info: sheerline.png used on input line 379.
 File: linhasheer.png Graphic file (type png)
 
 <use linhasheer.png>
-Package luatex.def Info: linhasheer.png used on input line 387.
+Package luatex.def Info: linhasheer.png used on input line 391.
 (luatex.def)             Requested size: 256.0748pt x 200.60078pt.
  [26
 
@@ -1661,7 +1612,7 @@ Package luatex.def Info: linhasheer.png used on input line 387.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1669,7 +1620,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1677,7 +1628,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1685,7 +1636,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1693,7 +1644,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1701,7 +1652,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1709,7 +1660,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1717,7 +1668,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1725,7 +1676,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1733,7 +1684,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1741,7 +1692,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1749,7 +1700,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1757,7 +1708,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1765,18 +1716,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1784,7 +1724,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1792,7 +1732,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1800,7 +1740,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1808,7 +1748,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1816,7 +1756,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1824,7 +1764,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1832,7 +1772,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1840,7 +1780,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1848,18 +1788,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1867,7 +1796,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1875,7 +1804,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1883,7 +1812,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1891,7 +1820,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1899,52 +1828,17 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.426 \end{frame}
+l.432 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.426 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [27
 
 ] <chineline.png, id=317, 693.34032pt x 170.13562pt>
 File: chineline.png Graphic file (type png)
  <use chineline.png>
-Package luatex.def Info: chineline.png used on input line 433.
+Package luatex.def Info: chineline.png used on input line 439.
 (luatex.def)             Requested size: 256.0748pt x 62.83755pt.
 
 [28
@@ -1953,7 +1847,7 @@ Package luatex.def Info: chineline.png used on input line 433.
 File: linhachine.png Graphic file (type png)
 
 <use linhachine.png>
-Package luatex.def Info: linhachine.png used on input line 441.
+Package luatex.def Info: linhachine.png used on input line 447.
 (luatex.def)             Requested size: 256.0748pt x 198.12488pt.
  [29
 
@@ -1961,7 +1855,7 @@ Package luatex.def Info: linhachine.png used on input line 441.
 <lateralopengl.png, id=329, 452.4403pt x 356.83313pt>
 File: lateralopengl.png Graphic file (type png)
  <use lateralopengl.png>
-Package luatex.def Info: lateralopengl.png used on input line 448.
+Package luatex.def Info: lateralopengl.png used on input line 454.
 (luatex.def)             Requested size: 256.0748pt x 201.95955pt.
 
 [30
@@ -1970,7 +1864,7 @@ Package luatex.def Info: lateralopengl.png used on input line 448.
 <vistasuperior.png, id=335, 843.90282pt x 370.38374pt>
 File: vistasuperior.png Graphic file (type png)
  <use vistasuperior.png>
-Package luatex.def Info: vistasuperior.png used on input line 467.
+Package luatex.def Info: vistasuperior.png used on input line 473.
 (luatex.def)             Requested size: 253.17279pt x 111.11597pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'fig:centra
@@ -1981,7 +1875,7 @@ l'
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1989,7 +1883,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1997,7 +1891,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2005,7 +1899,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2013,7 +1907,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2021,7 +1915,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2029,7 +1923,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2037,7 +1931,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2045,7 +1939,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2053,7 +1947,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2061,7 +1955,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2069,7 +1963,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2077,7 +1971,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2085,7 +1979,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2093,7 +1987,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2101,18 +1995,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2120,7 +2003,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2128,7 +2011,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2136,7 +2019,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2144,7 +2027,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2152,7 +2035,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2160,7 +2043,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2168,7 +2051,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2176,7 +2059,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2184,18 +2067,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2203,7 +2075,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2211,7 +2083,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2219,7 +2091,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2227,7 +2099,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2235,45 +2107,10 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.507 \end{frame}
+l.514 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.507 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [32
 
@@ -2281,7 +2118,7 @@ my insertion and my current dilemma will both disappear.
 File: sheerlineplan.jpg Graphic file (type jpg)
 
 <use sheerlineplan.jpg>
-Package luatex.def Info: sheerlineplan.jpg used on input line 514.
+Package luatex.def Info: sheerlineplan.jpg used on input line 522.
 (luatex.def)             Requested size: 256.0748pt x 81.28946pt.
  [33
 
@@ -2289,7 +2126,7 @@ Package luatex.def Info: sheerlineplan.jpg used on input line 514.
 <linhasheerplan.png, id=352, 452.4403pt x 355.3275pt>
 File: linhasheerplan.png Graphic file (type png)
  <use linhasheerplan.png>
-Package luatex.def Info: linhasheerplan.png used on input line 522.
+Package luatex.def Info: linhasheerplan.png used on input line 530.
 (luatex.def)             Requested size: 256.0748pt x 201.10739pt.
 
 [34
@@ -2298,7 +2135,7 @@ Package luatex.def Info: linhasheerplan.png used on input line 522.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2306,7 +2143,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2314,7 +2151,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2322,7 +2159,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2330,7 +2167,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2338,7 +2175,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2346,7 +2183,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2354,7 +2191,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2362,7 +2199,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2370,7 +2207,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2378,7 +2215,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2386,7 +2223,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2394,7 +2231,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2402,18 +2239,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2421,7 +2247,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2429,7 +2255,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2437,7 +2263,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2445,7 +2271,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2453,7 +2279,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2461,7 +2287,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2469,7 +2295,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2477,7 +2303,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2485,18 +2311,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2504,7 +2319,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2512,7 +2327,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2520,7 +2335,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2528,7 +2343,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2536,45 +2351,10 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.561 \end{frame}
+l.571 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-$
-l.561 \end{frame}
-               
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [35
 
@@ -2582,7 +2362,7 @@ my insertion and my current dilemma will both disappear.
 File: chinelineplan.jpg Graphic file (type jpg)
 
 <use chinelineplan.jpg>
-Package luatex.def Info: chinelineplan.jpg used on input line 568.
+Package luatex.def Info: chinelineplan.jpg used on input line 578.
 (luatex.def)             Requested size: 256.0748pt x 65.44057pt.
  [36
 
@@ -2591,7 +2371,7 @@ Package luatex.def Info: chinelineplan.jpg used on input line 568.
 File: linhachineplan.jpg Graphic file (type jpg)
 
 <use linhachineplan.jpg>
-Package luatex.def Info: linhachineplan.jpg used on input line 576.
+Package luatex.def Info: linhachineplan.jpg used on input line 586.
 (luatex.def)             Requested size: 256.0748pt x 223.22173pt.
  [37
 
@@ -2600,10 +2380,10 @@ Package luatex.def Info: linhachineplan.jpg used on input line 576.
 File: superioropengl.jpg Graphic file (type jpg)
 
 <use superioropengl.jpg>
-Package luatex.def Info: superioropengl.jpg used on input line 583.
+Package luatex.def Info: superioropengl.jpg used on input line 593.
 (luatex.def)             Requested size: 256.0748pt x 236.04555pt.
 
-Overfull \vbox (10.78517pt too high) detected at line 583
+Overfull \vbox (10.78517pt too high) detected at line 593
  []
 
 [38
@@ -2630,13 +2410,16 @@ e.pdf>] [43
 \tf@snm=\write8
 
 \openout8 = presentation_1.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 664.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 647.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: FE7068969C6D60935085295D5416C026;777.
+(rerunfilecheck)             Checksum: C4397E6AC26BCA33C6900DF1590C031B;763.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2644,14 +2427,14 @@ LaTeX Warning: There were multiply-defined labels.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20232 strings out of 494481
+ 20234 strings out of 494481
  100000,460012 words of node,token memory allocated
  4558 words of node memory still in use:
    31 hlist, 11 vlist, 2 rule, 47 disc, 8 local_par, 112 glue, 21 kern, 16 penal
 ty, 332 glyph, 57 attribute, 61 glue_spec, 57 attribute_list, 3 write, 16 pdf_co
 lorstack nodes
-   avail lists: 2:1737,3:754,4:186,5:122,6:1469,7:1122,8:95,9:637,10:13,11:274
- 23095 multiletter control sequences out of 65536+200000
+   avail lists: 2:1737,3:754,4:186,5:124,6:1463,7:1118,8:95,9:639,10:13,11:271
+ 23097 multiletter control sequences out of 65536+200000
  68 fonts using 5197247 bytes
  56i,13n,62p,779b,740s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmsans10-oblique.otf><c:/p
@@ -2667,7 +2450,7 @@ ss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on presentation_1.pdf (43 pages, 1660893 bytes).
+Output written on presentation_1.pdf (43 pages, 1661292 bytes).
 
 PDF statistics: 493 PDF objects out of 1000 (max. 8388607)
  107 named destinations out of 1000 (max. 131072)

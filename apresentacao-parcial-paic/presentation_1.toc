@@ -11,4 +11,4 @@
 \beamer@subsectionintoc {5}{2}{Vista Superior}{31}{0}{5}
 \beamer@sectionintoc {6}{Trabalhos Futuros}{39}{0}{6}
 \beamer@sectionintoc {7}{Cronograma}{41}{0}{7}
-\beamer@sectionintoc {8}{Referencial Bibliográfico}{42}{0}{8}
+\beamer@sectionintoc {8}{Bibliografia}{42}{0}{8}
