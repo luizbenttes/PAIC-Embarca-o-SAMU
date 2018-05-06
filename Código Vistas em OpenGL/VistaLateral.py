@@ -86,7 +86,7 @@ def MatrixConstructor():
 	C_1 = [Xc1,Yc1]
 
 
-	A_center,B_center = MatrixCenterLine(alphak,Hs,Ls,L0,Lc,Hc,K0,K1,K2,k=1)
+	A_center,B_center = MatrixCenterLine(alphak, Hs, Ls, L0, Lc, Hc, K0, K1, K2, k=1)
 	A_sheer, B_sheer =  MatrixSheer(Ls, Hs, hs, alpha_S, beta_S)
 	A_chine, B_chine =  MatrixChine(Lc, Hc, hc, alpha_C, beta_C, C_0, C_1, C_2, k=1)
 
